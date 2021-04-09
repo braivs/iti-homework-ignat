@@ -1,6 +1,6 @@
 import React from 'react'
 import Affair from './Affair'
-import {AffairType, deleteAffair, FilterType} from './HW2'
+import {AffairType, FilterType} from './HW2'
 // import s from './Affairs.module.css'
 
 export type AffairsPropsType = { // need to fix any
@@ -10,7 +10,6 @@ export type AffairsPropsType = { // need to fix any
 }
 
 function Affairs(props: AffairsPropsType) {
-    debugger
     const mappedAffairs = props.data.map((a: AffairType) => (
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
