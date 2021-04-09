@@ -1,4 +1,12 @@
 .someClass {
+    position: relative;
+}
 
+.lastButton {
+    /*position: absolute;*/
+    /*color: red;*/
+}
+
+button {
 }
 
