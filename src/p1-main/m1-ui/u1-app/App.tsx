@@ -13,8 +13,9 @@ function App() {
             <HW3/>
             {/*<HW4/>*/}
             {/*<HW5/>*/}
-
+            {/*<img src={space} alt="Logo" />;*/}
         </div>
+
     )
 }
 

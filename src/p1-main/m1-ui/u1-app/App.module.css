@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
+
 }
 
 .App {
-
+  background-image: url("../../../img/space.jpg");
+  height: 100vh;
+  color: lawngreen;
 }
