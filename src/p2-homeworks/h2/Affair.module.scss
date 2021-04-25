@@ -1,0 +1,17 @@
+.affairContainer{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .high {
+    color: red;
+  }
+  .middle {
+    color: orange;
+  }
+  .delButton{
+    background: green;
+    color: lawngreen;
+    width: 80px;
+  }
+}

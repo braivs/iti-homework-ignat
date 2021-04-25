@@ -3,6 +3,9 @@
 }
 
 .affairButton {
-  border: 1px solid greenyellow;
+  background: green;
+  color: lawngreen;
+  margin-right: 20px;
+  width: 60px;
 }
 
