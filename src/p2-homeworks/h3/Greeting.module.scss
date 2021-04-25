@@ -1,0 +1,33 @@
+.greetingBox{
+  display: flex;
+  margin-left: 10px;
+  align-items: flex-start;
+  .addBox{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.error {
+  border: 1px solid red;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.addButton, .input {
+  background: green;
+  color: lawngreen;
+}
+
+// не работает (
+.input:focus{
+  border: 1px solid lawngreen;
+}
+
+.addButton {
+  width: 50px;
+  margin: 0 20px;
+}
+

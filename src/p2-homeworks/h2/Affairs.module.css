@@ -1,5 +1,8 @@
 .someClass {
-    position: relative;
+  position: relative;
 }
 
+.affairButton {
+  border: 1px solid greenyellow;
+}
 
