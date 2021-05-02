@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/iti-homework-ignat/static/css/main.a1929964.chunk.css",
+    "main.js": "/iti-homework-ignat/static/js/main.1c898150.chunk.js",
+    "main.js.map": "/iti-homework-ignat/static/js/main.1c898150.chunk.js.map",
+    "runtime-main.js": "/iti-homework-ignat/static/js/runtime-main.c71f0444.js",
+    "runtime-main.js.map": "/iti-homework-ignat/static/js/runtime-main.c71f0444.js.map",
+    "static/js/2.a9cead3d.chunk.js": "/iti-homework-ignat/static/js/2.a9cead3d.chunk.js",
+    "static/js/2.a9cead3d.chunk.js.map": "/iti-homework-ignat/static/js/2.a9cead3d.chunk.js.map",
+    "index.html": "/iti-homework-ignat/index.html",
+    "static/css/main.a1929964.chunk.css.map": "/iti-homework-ignat/static/css/main.a1929964.chunk.css.map",
+    "static/js/2.a9cead3d.chunk.js.LICENSE.txt": "/iti-homework-ignat/static/js/2.a9cead3d.chunk.js.LICENSE.txt",
+    "static/media/App.module.css": "/iti-homework-ignat/static/media/space.c3415642.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c71f0444.js",
+    "static/js/2.a9cead3d.chunk.js",
+    "static/css/main.a1929964.chunk.css",
+    "static/js/main.1c898150.chunk.js"
+  ]
+}
