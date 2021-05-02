@@ -9,11 +9,13 @@ function Header() {
     }
 
     return (
-        <div className={s.header}>
-          <nav className={`${s.nav} ${(isMenuOpen) && s.hideMenu}`}>
-            <NavLink className={s.menuItem} to="/pre-junior">pre-junior</NavLink>
-            <NavLink className={s.menuItem} to="/junior">junior</NavLink>
-            <NavLink className={s.menuItem} to="/junior-plus">junior +</NavLink>
+        <div className={s.header}
+             onMouseEnter={() =>{setIsMenuOpen(true)}}
+             onMouseLeave={() =>{setIsMenuOpen(false)}}>
+          <nav className={`${s.nav} ${(!isMenuOpen) && s.hideMenu}`}>
+            <NavLink className={s.menuItem} to="/pre-junior" activeClassName={s.activeLink}>pre-junior</NavLink>
+            <NavLink className={s.menuItem} to="/junior" activeClassName={s.activeLink}>junior</NavLink>
+            <NavLink className={s.menuItem} to="/junior-plus" activeClassName={s.activeLink}>junior +</NavLink>
             <div className={s.toggleMenu} onClick={toggleMenuHandler}></div>
           </nav>
         </div>

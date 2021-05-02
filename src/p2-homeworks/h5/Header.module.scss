@@ -3,12 +3,17 @@
   justify-content: flex-start;
   .nav {
     position: relative;
-    transition: all 0.5s;
+    transition: all 0.3s linear;
+
     .menuItem {
       margin-right: 10px;
     }
-    &>a {
+    a {
       color: white;
+      text-decoration: none;
+    }
+    .activeLink {
+      color: blueviolet;
     }
   }
   .toggleMenu {
@@ -19,18 +24,13 @@
     width: 20px;
     height: 20px;
     background-color: lawngreen;
-    align-self: flex-end;
+    //align-self: flex-end;
   }
-  .activeLink {
 
-  }
 }
 
 .hideMenu {
   transform: translateX(-100%);
-  transition: 0.5s;
-  //display: none;
-  //position: absolute;
-  //left: -100%;
+  transition: 0.3s linear;
 }
 
