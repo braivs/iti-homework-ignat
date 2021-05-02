@@ -2,21 +2,35 @@
   display: flex;
   justify-content: flex-start;
   .nav {
-    transition: 0.5s;
+    position: relative;
+    transition: all 0.5s;
     .menuItem {
       margin-right: 10px;
     }
+    &>a {
+      color: white;
+    }
   }
-
   .toggleMenu {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(calc(100% + 5px), -50%);
     width: 20px;
     height: 20px;
     background-color: lawngreen;
     align-self: flex-end;
+  }
+  .activeLink {
+
   }
 }
 
 .hideMenu {
   transform: translateX(-100%);
   transition: 0.5s;
+  //display: none;
+  //position: absolute;
+  //left: -100%;
 }
+

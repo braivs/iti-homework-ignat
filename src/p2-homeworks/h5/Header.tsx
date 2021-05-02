@@ -14,8 +14,8 @@ function Header() {
             <NavLink className={s.menuItem} to="/pre-junior">pre-junior</NavLink>
             <NavLink className={s.menuItem} to="/junior">junior</NavLink>
             <NavLink className={s.menuItem} to="/junior-plus">junior +</NavLink>
+            <div className={s.toggleMenu} onClick={toggleMenuHandler}></div>
           </nav>
-          <div className={s.toggleMenu} onClick={toggleMenuHandler}></div>
         </div>
     )
 }
