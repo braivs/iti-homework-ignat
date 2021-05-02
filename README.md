@@ -1,2 +1,2 @@
-# iti-homework-ignat
+https://brightwiths.github.io/iti-homework-ignat/
 
