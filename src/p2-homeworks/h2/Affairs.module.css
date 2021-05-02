@@ -9,3 +9,7 @@
   width: 60px;
 }
 
+.activeFilter {
+  background-color: lawngreen;
+  color: green;
+}

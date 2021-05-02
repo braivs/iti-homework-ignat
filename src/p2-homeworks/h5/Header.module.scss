@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  .nav {
+    transition: 0.5s;
+    .menuItem {
+      margin-right: 10px;
+    }
+  }
+
+  .toggleMenu {
+    width: 20px;
+    height: 20px;
+    background-color: lawngreen;
+    align-self: flex-end;
+  }
+}
+
+.hideMenu {
+  transform: translateX(-100%);
+  transition: 0.5s;
+}

@@ -46,6 +46,7 @@ function HW2() {
             {/*should work (должно работать)*/}
             <Affairs
                 data={filteredAffairs}
+                filter={filter}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
             />
