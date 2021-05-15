@@ -4,6 +4,7 @@ function JuniorPlus() {
     return (
         <div>
           JuniorPlus
+        {/*  12 +*/}
         </div>
     )
 }
