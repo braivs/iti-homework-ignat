@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import {homeWorkReducer} from './bll/homeWorkReducer'
+import {homeWorkReducer, SortNameUpAC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
+import {UserType} from './bll/tests/homeWorkReducer.test';
 
 // export type UserType =
 
@@ -14,16 +15,17 @@ const initialPeople = [
 ]
 
 function HW8() {
-    const [people, setPeople] = useState<any>(initialPeople) // need to fix any
+    const [people, setPeople] = useState<Array<UserType>>(initialPeople)
 
     // need to fix any
-    const finalPeople = people.map((p: any) => (
+    const finalPeople = people.map((p: UserType) => (
         <div key={p._id}>
-            some name, age
+          <span>{p.name}</span>
+          <span>{p.age}</span>
         </div>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, SortNameUpAC()))
 
     return (
         <div>
