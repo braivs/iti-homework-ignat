@@ -22,25 +22,22 @@ beforeEach(() => {
 
 test('sort name up', () => {
     const newState = homeWorkReducer(initialState, SortNameUpAC())
-
     console.log(newState)
-    const initialStateCopy = [...initialState]
-    expect(newState).toEqual(
-      initialStateCopy.sort((a,b) => b.name > a.name ? -1 : 1)
-    )
+    const result = [ 1, 3, 4, 5, 2, 0 ]
+      .filter((el, i) => el === newState[i]._id)
+    expect(result.length).toBe(newState.length)
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, SortNameDownAC())
     console.log(newState)
-    const initialStateCopy = [...initialState]
-    expect(newState).toEqual(
-      initialStateCopy.sort((a,b) => b.name > a.name ? -1 : 1).reverse()
-    )
+    const result = [ 0, 2, 5, 4, 3, 1 ]
+      .filter((el, i) => el === newState[i]._id)
+    expect(result.length).toBe(newState.length)
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, CheckAC())
     console.log(newState)
-    expect(newState).toEqual(
-      initialState.filter(el => el.age >= 18)
-    )
+    const result = [ 1, 3, 4, 5 ]
+      .filter((el, i) => el === newState[i]._id)
+    expect(result.length).toBe(newState.length)
 })

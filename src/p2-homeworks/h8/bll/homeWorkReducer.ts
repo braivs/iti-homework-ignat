@@ -17,18 +17,9 @@ type ActionType = SortNameUpActionType | SortNameDownActionType | CheckActionTyp
 export const homeWorkReducer = (state: Array<UserType>, action: ActionType): Array<UserType> => {
   switch (action.type) {
     case 'sort': {
-      switch (action.payload) {
-        case 'up':
-          let stateCopy = [...state]
-          stateCopy.sort((a, b) => b.name > a.name ? -1 : 1)
-          return stateCopy
-        case 'down':
-          let stateCopy2 = [...state]
-          stateCopy2.sort((a, b) => b.name > a.name ? -1 : 1).reverse()
-          return stateCopy2
-        default:
-          return state
-      }
+      let stateCopy = [...state]
+      stateCopy.sort((a, b) => b.name > a.name ? -1 : 1)
+      return action.payload === 'up' ? stateCopy : stateCopy.reverse()
     }
     case 'check': {
       return state.filter(el => el.age >= 18)
@@ -38,12 +29,12 @@ export const homeWorkReducer = (state: Array<UserType>, action: ActionType): Arr
   }
 }
 
-export const SortNameUpAC = ():SortNameUpActionType => {
-  return { type: 'sort', payload: 'up' }
+export const SortNameUpAC = (): SortNameUpActionType => {
+  return {type: 'sort', payload: 'up'}
 }
-export const SortNameDownAC = ():SortNameDownActionType => {
-  return { type: 'sort', payload: 'down' }
+export const SortNameDownAC = (): SortNameDownActionType => {
+  return {type: 'sort', payload: 'down'}
 }
-export const CheckAC = ():CheckActionType => {
-  return { type: 'check', payload: 18 }
+export const CheckAC = (): CheckActionType => {
+  return {type: 'check', payload: 18}
 }
