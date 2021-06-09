@@ -4,4 +4,11 @@
 .editableSpan {
   color: blue;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+.editIcon {
+  width: 15px;
+  margin-right: 5px;
 }
