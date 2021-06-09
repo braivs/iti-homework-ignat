@@ -1,0 +1,9 @@
+.select {
+  width: 100px;
+  height: 25px;
+  background: green;
+  color: lawngreen;
+  &:focus {
+    border: 1px solid lawngreen;
+  }
+}

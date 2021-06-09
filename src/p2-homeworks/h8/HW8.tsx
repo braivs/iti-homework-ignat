@@ -4,8 +4,6 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import {UserType} from './bll/tests/homeWorkReducer.test';
 import s from './HW8.module.scss'
 
-// export type UserType =
-
 const initialPeople = [
   {_id: 0, name: 'Кот', age: 3},
   {_id: 1, name: 'Александр', age: 66},
