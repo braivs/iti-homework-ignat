@@ -1,14 +1,6 @@
-.editableSpan:before {
-  background: url('../../../../img/edit_icon_small.png');
-}
 .editableSpan {
-  color: blue;
+  display: inline-block;
+  color: deepskyblue;
   cursor: pointer;
-  display: flex;
-  align-items: center;
   margin: 10px 0;
-}
-.editIcon {
-  width: 15px;
-  margin-right: 5px;
 }
