@@ -6,7 +6,7 @@ import s from './Affair.module.scss'
 type AffairPropsType = {
     // key не нужно типизировать
     affair: AffairType
-    deleteAffairCallback: (value: number) => void
+    deleteAffairCallback: (id: number) => void
 }
 
 function Affair(props: AffairPropsType) {

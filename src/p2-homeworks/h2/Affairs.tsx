@@ -7,8 +7,8 @@ import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 export type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     filter: FilterType
-    setFilter: (filter: FilterType)=> void
-    deleteAffairCallback: (value: number) => void
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (id: number) => void
 }
 
 function Affairs(props: AffairsPropsType) {
