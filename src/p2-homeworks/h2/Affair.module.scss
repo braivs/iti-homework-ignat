@@ -1,12 +1,18 @@
 .affairContainer{
   display: flex;
-  width: 300px;
+  width: 340px;
   justify-content: space-between;
   margin-bottom: 10px;
-  .high {
+  .affairName {
+    width: 80px;
+  }
+  .priorityAll {
+    width: 80px;
+  }
+  .priorityHigh {
     color: red;
   }
-  .middle {
+  .priorityMiddle {
     color: orange;
   }
   .delButton{
