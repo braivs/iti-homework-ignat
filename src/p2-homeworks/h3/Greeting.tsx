@@ -26,7 +26,7 @@ const Greeting: React.FC<GreetingPropsType> = (
         <SuperInputText name={name}
                         onChange={setNameCallback}
                         onKeyPress={addUserKeyCallback}
-                        className={`${inputClass} ${s.input}`}
+                        className={inputClass}
         />
         <span className={s.errorMessage}>{error}</span>
       </div>
