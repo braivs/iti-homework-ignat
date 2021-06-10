@@ -18,19 +18,19 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
 
 
-  const inputClass = error ? s.error : ''
+  const inputClass = error ? s.errorInput : s.input
 
   return (
     <div className={s.greetingBox}>
       <div className={s.addBox}>
-        <SuperInputText name={name}
+        <SuperInputText value={name}
                         onChange={setNameCallback}
                         onKeyPress={addUserKeyCallback}
                         className={inputClass}
         />
         <span className={s.errorMessage}>{error}</span>
       </div>
-      <SuperButton disabled={!!inputClass} onClick={addUser} className={s.addButton}>add</SuperButton>
+      <SuperButton disabled={!!error} onClick={addUser} className={s.addButton}>add</SuperButton>
       <span>{totalUsers}</span>
     </div>
   )

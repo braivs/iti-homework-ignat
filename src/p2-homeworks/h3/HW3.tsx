@@ -17,7 +17,7 @@ function HW3() {
           _id: v1(),
           name
         }
-        setUsers([newUser, ...users])
+        setUsers([...users, newUser])
     }
 
     return (

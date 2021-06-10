@@ -33,6 +33,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     } else {
       alert(`Hello ${name.trim()} !`)
       addUserCallback(name.trim());
+      setName('')
     }
   }
 

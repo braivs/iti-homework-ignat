@@ -1,23 +1,40 @@
 .greetingBox{
   display: flex;
+  margin-top: 10px;
   margin-left: 10px;
   align-items: flex-start;
   .addBox{
     display: flex;
     flex-direction: column;
   }
+  .input {
+    border: 1px solid #2f4829;
+    &:focus {
+      outline: none;
+      border: 1px solid lawngreen;
+    }
+  }
 }
 
-.error {
+.errorInput {
   border: 1px solid red;
+  &:focus {
+    outline: none;
+  }
 }
 
 .errorMessage {
   color: red;
+  height: 21px;
 }
 
 .addButton {
   width: 50px;
   margin: 0 20px;
+  border: 1px solid #2f4829;
+  &:disabled {
+    background: grey;
+    color: dimgrey;
+  }
 }
 
