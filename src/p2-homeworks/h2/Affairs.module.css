@@ -1,11 +1,8 @@
-.someClass {
-  position: relative;
+.affair {
   margin-left: 10px;
 }
 
 .affairButton {
-  background: green;
-  color: lawngreen;
   margin-right: 20px;
   width: 60px;
 }

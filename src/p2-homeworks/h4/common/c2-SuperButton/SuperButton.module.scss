@@ -1,0 +1,17 @@
+.button {
+  cursor: pointer;
+  &:disabled {
+    cursor: auto;
+    background: grey;
+    color: dimgrey;
+  }
+}
+
+.default {
+  background: green;
+  color: lawngreen;
+}
+
+.red {
+  background: red;
+}

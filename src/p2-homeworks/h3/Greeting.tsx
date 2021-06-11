@@ -18,7 +18,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 ) => {
 
 
-  const inputClass = error ? s.errorInput : s.input
+  // const inputClass = error ? s.errorInput : s.input
 
   return (
     <div className={s.greetingBox}>
@@ -26,9 +26,10 @@ const Greeting: React.FC<GreetingPropsType> = (
         <SuperInputText value={name}
                         onChange={setNameCallback}
                         onKeyPress={addUserKeyCallback}
-                        className={inputClass}
+                        error={error}
+                        spanClassName={s.spanError}
         />
-        <span className={s.errorMessage}>{error}</span>
+        {/*<span className={s.spanError}>{error}</span>*/}
       </div>
       <SuperButton disabled={!!error} onClick={addUser} className={s.addButton}>add</SuperButton>
       <span>{totalUsers}</span>

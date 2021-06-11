@@ -1,0 +1,19 @@
+.input {
+  background: green;
+  color: lawngreen;
+  &:focus {
+    outline: 2px solid lawngreen;
+  }
+}
+
+.superInput {
+  border: 2px solid cadetblue;
+}
+
+.errorInput {
+  border: 3px solid red;
+}
+
+.error {
+  color: green;
+}
