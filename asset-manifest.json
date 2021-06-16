@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/iti-homework-ignat/static/css/main.518d1d2f.chunk.css",
-    "main.js": "/iti-homework-ignat/static/js/main.79a09346.chunk.js",
-    "main.js.map": "/iti-homework-ignat/static/js/main.79a09346.chunk.js.map",
+    "main.js": "/iti-homework-ignat/static/js/main.ea6dda70.chunk.js",
+    "main.js.map": "/iti-homework-ignat/static/js/main.ea6dda70.chunk.js.map",
     "runtime-main.js": "/iti-homework-ignat/static/js/runtime-main.c71f0444.js",
     "runtime-main.js.map": "/iti-homework-ignat/static/js/runtime-main.c71f0444.js.map",
     "static/js/2.479b107d.chunk.js": "/iti-homework-ignat/static/js/2.479b107d.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.c71f0444.js",
     "static/js/2.479b107d.chunk.js",
     "static/css/main.518d1d2f.chunk.css",
-    "static/js/main.79a09346.chunk.js"
+    "static/js/main.ea6dda70.chunk.js"
   ]
 }
