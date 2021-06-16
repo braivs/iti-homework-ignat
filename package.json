@@ -1,5 +1,6 @@
 {
   "name": "iti-homework-ignat",
+  "homepage": "https://brightwiths.github.io/iti-homework-ignat",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,7 +22,6 @@
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://brightwiths.github.io/iti-homework-ignat",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
