@@ -28,7 +28,6 @@ function HW12() {
       {/*SuperSelect or SuperRadio*/}
       <div>
         <SuperRadio
-          name={'radio'}
           options={themes}
           value={theme}
           onChangeOption={onChangeCallback}
