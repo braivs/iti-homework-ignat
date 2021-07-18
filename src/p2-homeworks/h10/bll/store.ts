@@ -1,8 +1,10 @@
 import {loadingReducer} from "./loadingReducer";
 import {combineReducers, createStore} from "redux";
+import {colorThemeReducer} from "../../h11/bll/colorThemeReducer";
 
 const reducers = combineReducers({
     loading: loadingReducer,
+    colorTheme: colorThemeReducer,
 
 });
 

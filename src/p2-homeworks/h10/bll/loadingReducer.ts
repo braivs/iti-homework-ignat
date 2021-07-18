@@ -12,7 +12,6 @@ type LoadingActionType = {
 }
 
 export const loadingReducer = (state: initStateType = initState, action: LoadingActionType): initStateType => {
-    debugger
     switch (action.type) {
         case "CHANGE-IS-LOADING": {
            return {...state, isLoading: action.isLoading}
