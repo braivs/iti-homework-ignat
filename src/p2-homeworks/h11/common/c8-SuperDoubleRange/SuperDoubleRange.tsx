@@ -1,5 +1,5 @@
 import React, {ChangeEvent} from "react";
-import {Slider, Typography} from "@material-ui/core";
+import {Slider} from "@material-ui/core";
 import s from './SuperDoubleRange.module.scss'
 
 type SuperDoubleRangePropsType = {

@@ -1,0 +1,8 @@
+.container {
+    display: inline-block;
+    width: 500px;
+    margin-left: 10px;
+    background: orange;
+    padding: 20px;
+    border-radius: 5px;
+}
