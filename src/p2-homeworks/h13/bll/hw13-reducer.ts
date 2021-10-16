@@ -22,26 +22,11 @@ export const showInfoAndErrorAC = (infoText: string, errorText: string) =>
 export const requestTC = (value: boolean) => (dispatch: Dispatch<ActionType>) => {
     API.request(value)
         .then(res => {
-            debugger
             dispatch(showInfoAndErrorAC(res.data.info, res.data.errorText))
             console.log(res)
         })
-        .catch(res => {
-            debugger
-
-            if (res.message) {
-                dispatch(showInfoAndErrorAC('123', '12345'))
-
-                return;
-            }
-
-            // console.log(1, error.message)
-            // console.log(1, error.errorText)
-            // console.log(1, error.info)
-            // console.log(1, error.yourBody)
-            // console.log(1, error.yourQuery)
-            // debugger
-            // dispatch(showInfoAndErrorAC(error.data.info, error.data.errorText))
+        .catch(error => {
+            dispatch(showInfoAndErrorAC(error.response.data.info, error.response.data.errorText))
         })
 }
 
